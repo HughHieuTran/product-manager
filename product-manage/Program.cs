@@ -1,4 +1,4 @@
-using LearnAPI.Repos;
+using product_manage.Repository;
 using Microsoft.EntityFrameworkCore;
 using product_manage.Service;
 
@@ -13,7 +13,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddTransient<ICustomerService, CustomerService>();
 
-builder.Services.AddDbContext<DbContext>(
+builder.Services.AddDbContext<DbManagerContext>(
     o => o.UseSqlServer(builder.Configuration.GetConnectionString("apicon")));
 
 var app = builder.Build();

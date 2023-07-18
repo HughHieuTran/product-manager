@@ -24,7 +24,7 @@
 
   <ItemGroup>
     <Folder Include="Container\" />
-    <Folder Include="Repos\" />
+    <Folder Include="Model\" />
   </ItemGroup>
 
 </Project>

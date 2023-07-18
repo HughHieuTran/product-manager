@@ -5,13 +5,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace product_manage.Repository;
 
-public partial class DbContext : Microsoft.EntityFrameworkCore.DbContext
+public partial class DbManagerContext : Microsoft.EntityFrameworkCore.DbContext
 {
-    public DbContext()
+    public DbManagerContext()
     {
     }
 
-    public DbContext(DbContextOptions<DbContext> options)
+    public DbManagerContext(DbContextOptions<DbManagerContext> options)
         : base(options)
     {
     }
